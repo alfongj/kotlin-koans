@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class _24_JavaCode extends JavaCode {
     public Collection<String> doSomethingStrangeWithCollection(Collection<String> collection) {
-        Map<Integer, List<String>> groupsByLength = Maps.newHashMap();
+        Map<Integer, List<String>> groupsByLength = Maps.newHashMap(); // 2: { "aa", "aa", "bb"}
         for (String s : collection) {
             List<String> strings = groupsByLength.get(s.length());
             if (strings == null) {
